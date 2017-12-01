@@ -8,9 +8,15 @@
       window.Polymer.dom = 'shadow';
       */
     </script>
-    <link rel="import" href="demo-element.html">
+    <link rel="import" href="../border-layout/border-layout.html">
   </head>
   <body>
-    <demo-element></demo-element>
+    <border-layout>
+      <label slot="NORTH">HEADER</label>
+      <label slot="WEST">LEFT</label>
+      <label slot="CENTER">MAIN</label>
+      <label slot="EAST">RIGHT</label>
+      <label slot="SOUTH">FOOTER</label>
+    </border-layout>
   </body>
 </html>
