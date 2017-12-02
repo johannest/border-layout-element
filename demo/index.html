@@ -9,12 +9,50 @@
       */
     </script>
     <link rel="import" href="../border-layout/border-layout.html">
+    <style>
+    border-layout {
+      --layout-width:300px;
+      --layout-height:300px;
+
+      --header-height:50px;
+      --center-height:1fr;
+      --footer-height:50px;
+      --left-width:50px;
+      --center-width:1fr;
+      --right-width:50px;
+
+      --layout-border: 1px solid lightgray;
+    }
+    button.tab {
+      height: 50px;
+      width: 50px;
+    }
+    textarea.text {
+      height: 400px;
+      width: 100%;
+    }
+    </style>
   </head>
   <body>
     <border-layout>
       <label slot="NORTH">HEADER</label>
       <label slot="WEST">LEFT</label>
       <label slot="CENTER">MAIN</label>
+      <label slot="EAST">RIGHT</label>
+      <label slot="SOUTH">FOOTER</label>
+    </border-layout>
+
+    <border-layout>
+      <div slot="NORTH">
+        <button class="tab">Tab 1</button>
+        <button class="tab">Tab 2</button>
+        <button class="tab">Tab 3</button>
+      </div>
+      <label slot="WEST">LEFT</label>
+      <div slot="CENTER">
+        <textarea class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </textarea>
+      </div>
       <label slot="EAST">RIGHT</label>
       <label slot="SOUTH">FOOTER</label>
     </border-layout>

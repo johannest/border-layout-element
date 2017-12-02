@@ -6,36 +6,42 @@
     <style>
       :host {
         display: inline-block;
-        width: 100%;
-        height: 100%;
       }
       #layout {
           display: grid;
           grid-template-areas:  "head head head"
                                 "lnav main rnav"
                                 "foot foot foot";
-          grid-template-rows: 50px 500px 50px;
-          grid-template-columns: 75px 1fr 75px;
+          grid-template-rows: var(--header-height) var(--center-height) var(--footer-height);
+          grid-template-columns: var(--left-width) var(--center-width) var(--right-width);
+          width: var(--layout-width);
+          height: var(--layout-height);
+          border: var(--layout-border);
       }
       #layout > #header {
+        overflow: hidden;
         grid-area: head;
-        border: 1px solid lightgray;
+        border: var(--layout-border);
       }
       #layout > #lnav {
+        overflow: hidden;
         grid-area: lnav;
-        border: 1px solid lightgray;
+        border: var(--layout-border);
       }
       #layout > #main {
+        overflow: auto;
         grid-area: main;
-        border: 1px solid lightgray;
+        border: var(--layout-border);
       }
       #layout > #rnav {
+        overflow: hidden;
         grid-area: rnav;
-        border: 1px solid lightgray;
+        border: var(--layout-border);
       }
       #layout > #footer {
+        overflow: hidden;
         grid-area: foot;
-        border: 1px solid lightgray;
+        border: var(--layout-border);
       }
     </style>
 
