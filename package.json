@@ -1,0 +1,25 @@
+{
+  "name": "border-layout",
+  "version": "0.0.1",
+  "description": "Polymer element providing responsive Swing border layout like layout",
+  "main": "border-layout.html",
+  "repository": "johannest/border-layout-element",
+  "keywords": [
+    "Vaadin",
+    "border-layout",
+    "web-components",
+    "web-component",
+    "polymer",
+    "swing"
+  ],
+  "author": "Johannes Tuikkala",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/johannest/border-layout-element/issues"
+  },
+  "homepage": "https://github.com/johannest",
+  "devDependencies": {
+    "bower": "latest",
+    "polymer-cli": "^0.18.0"
+  }
+}
