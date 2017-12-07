@@ -1,5 +1,7 @@
 {
   "name": "border-layout",
+  "description": "border-layout",
+  "main": "border-layout.html",
   "version": "0.0.1",
   "homepage": "https://github.com/johannest/border-layout-element.git",
   "license": "MIT",
