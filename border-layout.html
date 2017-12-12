@@ -48,23 +48,23 @@
     <!-- shadow DOM goes here -->
     <section id="layout">
       <header id="header">
-        <slot name="NORTH">
+        <slot id="NORTH" name="NORTH">
         </slot>
       </header>
       <nav id="lnav">
-        <slot name="WEST">
+        <slot id="WEST" name="WEST">
         </slot>
       </nav>
       <main id="main">
-        <slot name="CENTER">
+        <slot id="CENTER" name="CENTER">
         </slot>
       </main>
       <nav id="rnav">
-        <slot name="EAST">
+        <slot id="EAST" name="EAST">
         </slot>
       </nav>
       <footer id="footer">
-        <slot name="SOUTH">
+        <slot id="SOUTH" name="SOUTH">
         </slot>
       </footer>
     </section>

@@ -1,6 +1,6 @@
 {
   "name": "border-layout",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Polymer element providing responsive Swing border layout like layout",
   "main": "border-layout.html",
   "repository": "johannest/border-layout-element",
